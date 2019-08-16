@@ -16,7 +16,6 @@ class HomeVC: BaseViewController {
     
     let cardView: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
         return view
     }()
 
@@ -30,12 +29,19 @@ class HomeVC: BaseViewController {
     
     //MARK:- Fileprivate Methods Here
     fileprivate func setupLayout() {
-        self.view.addSubview(homeControlStackView)
-        self.view.addSubview(topNavigationStackView)
-        self.view.addSubview(cardView)
+        let stackView = UIStackView(arrangedSubviews: [topNavigationStackView, cardView, homeControlStackView])
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        view.addSubview(stackView)
         
-        homeControlStackView.anchor(top: nil, left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 80)
-        topNavigationStackView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 60)
-        cardView.anchor(top: topNavigationStackView.bottomAnchor, left: view.leftAnchor, bottom: homeControlStackView.topAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+        let cardImageView = CardView(frame: .zero)
+        cardView.addSubview(cardImageView)
+        cardImageView.anchor(top: cardView.topAnchor, left: cardView.leftAnchor, bottom: cardView.bottomAnchor, right: cardView.rightAnchor, paddingTop: 16, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+        
+        stackView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+        stackView.isLayoutMarginsRelativeArrangement = true
+        stackView.layoutMargins = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
+        
+        stackView.bringSubviewToFront(cardView)
     }
 }

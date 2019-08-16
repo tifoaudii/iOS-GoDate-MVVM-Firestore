@@ -9,6 +9,10 @@
 import UIKit
 
 class TopNavigationStackView: UIStackView {
+    
+    let settingButton = UIButton(type: .system)
+    let messageButton = UIButton(type: .system)
+    let fireImageView = UIImageView(image: #imageLiteral(resourceName: "app_icon"))
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,16 +25,15 @@ class TopNavigationStackView: UIStackView {
     }
     
     private func setupLayout() {
-        let topSubview = [#imageLiteral(resourceName: "top_left_profile"),#imageLiteral(resourceName: "app_icon"),#imageLiteral(resourceName: "top_right_messages")].map { (image) -> UIView in
-            let button = UIButton(type: .system)
-            button.setImage(image.withRenderingMode(.alwaysOriginal), for: .normal)
-            return button
-        }
+        settingButton.setImage(#imageLiteral(resourceName: "top_left_profile").withRenderingMode(.alwaysOriginal), for: .normal)
+        messageButton.setImage(#imageLiteral(resourceName: "top_right_messages").withRenderingMode(.alwaysOriginal), for: .normal)
+        fireImageView.contentMode = .scaleAspectFit
         
-        topSubview.forEach({
+        [settingButton, UIView(), fireImageView, UIView(), messageButton].forEach({
             addArrangedSubview($0)
         })
-        
-        distribution = .fillEqually
+        distribution = .equalCentering
+        isLayoutMarginsRelativeArrangement = true
+        layoutMargins = UIEdgeInsets(top: 16, left: 16, bottom: 0, right: 12)
     }
 }

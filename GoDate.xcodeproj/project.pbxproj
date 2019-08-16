@@ -12,6 +12,7 @@
 		2907A80C23037B0600813517 /* HomeControlStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907A80B23037B0600813517 /* HomeControlStackView.swift */; };
 		2907A80E23037B1E00813517 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907A80D23037B1E00813517 /* TopNavigationStackView.swift */; };
 		2907A81023037B9800813517 /* AnchorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907A80F23037B9800813517 /* AnchorExt.swift */; };
+		296487B12304D39900BE8839 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296487B02304D39900BE8839 /* CardView.swift */; };
 		29AD6125230043CA003BA447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AD6124230043CA003BA447 /* AppDelegate.swift */; };
 		29AD612D230043CA003BA447 /* GoDate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29AD612B230043CA003BA447 /* GoDate.xcdatamodeld */; };
 		29AD612F230043CB003BA447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29AD612E230043CB003BA447 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		2907A80B23037B0600813517 /* HomeControlStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControlStackView.swift; sourceTree = "<group>"; };
 		2907A80D23037B1E00813517 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
 		2907A80F23037B9800813517 /* AnchorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorExt.swift; sourceTree = "<group>"; };
+		296487B02304D39900BE8839 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		29AD6121230043CA003BA447 /* GoDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AD6124230043CA003BA447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29AD612C230043CA003BA447 /* GoDate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoDate.xcdatamodel; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				2907A80B23037B0600813517 /* HomeControlStackView.swift */,
 				2907A80D23037B1E00813517 /* TopNavigationStackView.swift */,
+				296487B02304D39900BE8839 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				2907A80923037AD300813517 /* HomeVC.swift in Sources */,
 				2907A80E23037B1E00813517 /* TopNavigationStackView.swift in Sources */,
 				29AD6125230043CA003BA447 /* AppDelegate.swift in Sources */,
+				296487B12304D39900BE8839 /* CardView.swift in Sources */,
 				2907A80723037A9900813517 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
