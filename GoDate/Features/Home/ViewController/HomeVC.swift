@@ -14,7 +14,7 @@ class HomeVC: BaseViewController {
     let homeControlStackView = HomeControlStackView()
     let topNavigationStackView = TopNavigationStackView()
     
-    let cardView: UIView = {
+    let cardContainerView: UIView = {
         let view = UIView()
         return view
     }()
@@ -29,19 +29,20 @@ class HomeVC: BaseViewController {
     
     //MARK:- Fileprivate Methods Here
     fileprivate func setupLayout() {
-        let stackView = UIStackView(arrangedSubviews: [topNavigationStackView, cardView, homeControlStackView])
+        let stackView = UIStackView(arrangedSubviews: [topNavigationStackView, cardContainerView, homeControlStackView])
         stackView.axis = .vertical
         stackView.distribution = .fill
+        stackView.spacing = 18
         view.addSubview(stackView)
         
         let cardImageView = CardView(frame: .zero)
-        cardView.addSubview(cardImageView)
-        cardImageView.anchor(top: cardView.topAnchor, left: cardView.leftAnchor, bottom: cardView.bottomAnchor, right: cardView.rightAnchor, paddingTop: 16, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+        cardContainerView.addSubview(cardImageView)
+        cardImageView.anchor(top: cardContainerView.topAnchor, left: cardContainerView.leftAnchor, bottom: cardContainerView.bottomAnchor, right: cardContainerView.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
         
         stackView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.layoutMargins = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
         
-        stackView.bringSubviewToFront(cardView)
+        stackView.bringSubviewToFront(cardContainerView)
     }
 }

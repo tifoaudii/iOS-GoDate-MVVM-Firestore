@@ -34,6 +34,6 @@ class TopNavigationStackView: UIStackView {
         })
         distribution = .equalCentering
         isLayoutMarginsRelativeArrangement = true
-        layoutMargins = UIEdgeInsets(top: 16, left: 16, bottom: 0, right: 12)
+        layoutMargins = UIEdgeInsets(top: 16, left: 16, bottom: 8, right: 16)
     }
 }
