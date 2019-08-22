@@ -25,6 +25,7 @@ class TopNavigationStackView: UIStackView {
     }
     
     private func setupLayout() {
+        heightAnchor.constraint(equalToConstant: 80).isActive = true
         settingButton.setImage(#imageLiteral(resourceName: "top_left_profile").withRenderingMode(.alwaysOriginal), for: .normal)
         messageButton.setImage(#imageLiteral(resourceName: "top_right_messages").withRenderingMode(.alwaysOriginal), for: .normal)
         fireImageView.contentMode = .scaleAspectFit

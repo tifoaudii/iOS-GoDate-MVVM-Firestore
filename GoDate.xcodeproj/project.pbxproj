@@ -12,6 +12,9 @@
 		2907A80C23037B0600813517 /* HomeControlStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907A80B23037B0600813517 /* HomeControlStackView.swift */; };
 		2907A80E23037B1E00813517 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907A80D23037B1E00813517 /* TopNavigationStackView.swift */; };
 		2907A81023037B9800813517 /* AnchorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907A80F23037B9800813517 /* AnchorExt.swift */; };
+		2929861023099840003234B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2929860F23099840003234B7 /* User.swift */; };
+		2955510B230EB3DB004F08D9 /* CardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955510A230EB3DB004F08D9 /* CardVM.swift */; };
+		2955510D230EB4D4004F08D9 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955510C230EB4D4004F08D9 /* HomeVM.swift */; };
 		296487B12304D39900BE8839 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296487B02304D39900BE8839 /* CardView.swift */; };
 		29AD6125230043CA003BA447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AD6124230043CA003BA447 /* AppDelegate.swift */; };
 		29AD612D230043CA003BA447 /* GoDate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29AD612B230043CA003BA447 /* GoDate.xcdatamodeld */; };
@@ -25,6 +28,9 @@
 		2907A80B23037B0600813517 /* HomeControlStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControlStackView.swift; sourceTree = "<group>"; };
 		2907A80D23037B1E00813517 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
 		2907A80F23037B9800813517 /* AnchorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorExt.swift; sourceTree = "<group>"; };
+		2929860F23099840003234B7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2955510A230EB3DB004F08D9 /* CardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVM.swift; sourceTree = "<group>"; };
+		2955510C230EB4D4004F08D9 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 		296487B02304D39900BE8839 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		29AD6121230043CA003BA447 /* GoDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AD6124230043CA003BA447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +54,8 @@
 		2907A80423037A3900813517 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				29555109230EB3AE004F08D9 /* ViewModel */,
+				2929860E23099833003234B7 /* Model */,
 				2907A80A23037ADF00813517 /* Views */,
 				2907A80523037A4300813517 /* ViewController */,
 			);
@@ -70,6 +78,23 @@
 				296487B02304D39900BE8839 /* CardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2929860E23099833003234B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2929860F23099840003234B7 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		29555109230EB3AE004F08D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2955510A230EB3DB004F08D9 /* CardVM.swift */,
+				2955510C230EB4D4004F08D9 /* HomeVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		29AD6118230043CA003BA447 = {
@@ -222,10 +247,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2907A80C23037B0600813517 /* HomeControlStackView.swift in Sources */,
+				2955510D230EB4D4004F08D9 /* HomeVM.swift in Sources */,
 				2907A81023037B9800813517 /* AnchorExt.swift in Sources */,
 				29AD612D230043CA003BA447 /* GoDate.xcdatamodeld in Sources */,
 				2907A80923037AD300813517 /* HomeVC.swift in Sources */,
+				2955510B230EB3DB004F08D9 /* CardVM.swift in Sources */,
 				2907A80E23037B1E00813517 /* TopNavigationStackView.swift in Sources */,
+				2929861023099840003234B7 /* User.swift in Sources */,
 				29AD6125230043CA003BA447 /* AppDelegate.swift in Sources */,
 				296487B12304D39900BE8839 /* CardView.swift in Sources */,
 				2907A80723037A9900813517 /* BaseViewController.swift in Sources */,
