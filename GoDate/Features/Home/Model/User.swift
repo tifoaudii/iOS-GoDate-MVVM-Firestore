@@ -1,3 +1,4 @@
+
 //
 //  User.swift
 //  GoDate
@@ -9,8 +10,9 @@
 import Foundation
 
 struct User {
-    var name: String
-    var age: Int
-    var job: String
-    var imageUrl: String
+	var name: String
+	var age: Int
+	var job: String
+	var imageUrl: String
 }
+

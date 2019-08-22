@@ -23,15 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2907A80623037A9900813517 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		2907A80823037AD300813517 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		2907A80B23037B0600813517 /* HomeControlStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeControlStackView.swift; sourceTree = "<group>"; };
-		2907A80D23037B1E00813517 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
-		2907A80F23037B9800813517 /* AnchorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorExt.swift; sourceTree = "<group>"; };
-		2929860F23099840003234B7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		2955510A230EB3DB004F08D9 /* CardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVM.swift; sourceTree = "<group>"; };
-		2955510C230EB4D4004F08D9 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
-		296487B02304D39900BE8839 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2907A80623037A9900813517 /* BaseViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		2907A80823037AD300813517 /* HomeVC.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		2907A80B23037B0600813517 /* HomeControlStackView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeControlStackView.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		2907A80D23037B1E00813517 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		2907A80F23037B9800813517 /* AnchorExt.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AnchorExt.swift; sourceTree = "<group>"; tabWidth = 2; };
+		2929860F23099840003234B7 /* User.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		2955510A230EB3DB004F08D9 /* CardVM.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = CardVM.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		2955510C230EB4D4004F08D9 /* HomeVM.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		296487B02304D39900BE8839 /* CardView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
 		29AD6121230043CA003BA447 /* GoDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AD6124230043CA003BA447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29AD612C230043CA003BA447 /* GoDate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoDate.xcdatamodel; sourceTree = "<group>"; };
