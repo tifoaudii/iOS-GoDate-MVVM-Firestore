@@ -1,4 +1,3 @@
-
 //
 //  CardViewModel.swift
 //  GoDate
@@ -9,10 +8,21 @@
 
 import UIKit
 
-struct CardVM {
+class CardVM {
 	
 	//MARK:- ViewModel's properties here
-	private var user: User
+	fileprivate var user: User
+	fileprivate var imageIndex = 0 {
+		didSet {
+			let userImage = user.imageUrl[self.imageIndex]
+			let image = UIImage(named: userImage)
+			imageIndexDidChange?(image, self.imageIndex)
+		}
+	}
+	
+	//MARK:- Closures for reactive programming
+	typealias index = Int
+	var imageIndexDidChange: ((UIImage?, index)-> ())?
 	
 	//MARK:- Initializer
 	init(user: User) {
@@ -43,7 +53,20 @@ struct CardVM {
 	}
 	
 	var userImage: UIImage {
-		return UIImage(named: user.imageUrl)!
+		guard let image = UIImage(named: user.imageUrl[imageIndex]) else {
+			return UIImage()
+		}
+		return image
+	}
+	
+	func nextImageIndex() {
+		let userImages = user.imageUrl.count
+		imageIndex = min(imageIndex + 1, userImages - 1)
+	}
+	
+	func prevImageIndex() {
+		imageIndex = max(imageIndex - 1, 0)
 	}
 }
+
 
