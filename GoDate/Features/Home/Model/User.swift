@@ -13,6 +13,6 @@ struct User {
 	var name: String
 	var age: Int
 	var job: String
-	var imageUrl: String
+	var imageUrl: [String]
 }
 
