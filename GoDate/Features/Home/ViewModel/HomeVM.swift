@@ -12,13 +12,9 @@ import UIKit
 class HomeVM {
 	
 	let _users: [User] = [
-		User(name: "Lely", age: 21, job: "Product Manager", imageUrl: "lely"),
-		User(name: "Asriina", age: 19, job: "Product Manager", imageUrl: "aci"),
-		User(name: "Asriina", age: 19, job: "Product Manager", imageUrl: "aci"),
-		User(name: "Asriina", age: 19, job: "Product Manager", imageUrl: "aci"),
-		User(name: "Asriina", age: 19, job: "Product Manager", imageUrl: "aci"),
-		User(name: "Asriina", age: 19, job: "Product Manager", imageUrl: "aci"),
-		User(name: "Asriina", age: 19, job: "Product Manager", imageUrl: "aci")
+		User(name: "Lely", age: 21, job: "Product Manager", imageUrl: ["lely","aci","lely"]),
+		User(name: "Asriina", age: 19, job: "Product Manager", imageUrl: ["aci","lely"]),
+		User(name: "Asriina", age: 19, job: "Product Manager", imageUrl: ["aci", "lely"]),
 	]
 	
 	var user = [User]()
@@ -50,10 +46,6 @@ class HomeVM {
 		self.user = self._users
 		self.isFetching = false
 		completion(user)
-	}
-	
-	func viewModelForCard(with user: User) -> CardVM {
-		return CardVM(user: user)
 	}
 }
 
