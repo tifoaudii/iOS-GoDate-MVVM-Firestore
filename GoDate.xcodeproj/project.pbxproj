@@ -11,11 +11,13 @@
 		2907A80923037AD300813517 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907A80823037AD300813517 /* HomeVC.swift */; };
 		2907A80C23037B0600813517 /* HomeControlStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907A80B23037B0600813517 /* HomeControlStackView.swift */; };
 		2907A80E23037B1E00813517 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907A80D23037B1E00813517 /* TopNavigationStackView.swift */; };
-		2907A81023037B9800813517 /* AnchorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907A80F23037B9800813517 /* AnchorExt.swift */; };
+		2907A81023037B9800813517 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907A80F23037B9800813517 /* UIViewExtension.swift */; };
 		2929861023099840003234B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2929860F23099840003234B7 /* User.swift */; };
 		2955510B230EB3DB004F08D9 /* CardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955510A230EB3DB004F08D9 /* CardVM.swift */; };
 		2955510D230EB4D4004F08D9 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955510C230EB4D4004F08D9 /* HomeVM.swift */; };
 		296487B12304D39900BE8839 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296487B02304D39900BE8839 /* CardView.swift */; };
+		299D50DF232CF468002A73DC /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D50DE232CF468002A73DC /* RegisterVC.swift */; };
+		299D50E2232CF6F4002A73DC /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299D50E1232CF6F4002A73DC /* TextField.swift */; };
 		29AD6125230043CA003BA447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AD6124230043CA003BA447 /* AppDelegate.swift */; };
 		29AD612D230043CA003BA447 /* GoDate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29AD612B230043CA003BA447 /* GoDate.xcdatamodeld */; };
 		29AD612F230043CB003BA447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29AD612E230043CB003BA447 /* Assets.xcassets */; };
@@ -24,14 +26,16 @@
 
 /* Begin PBXFileReference section */
 		2907A80623037A9900813517 /* BaseViewController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
-		2907A80823037AD300813517 /* HomeVC.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		2907A80823037AD300813517 /* HomeVC.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		2907A80B23037B0600813517 /* HomeControlStackView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeControlStackView.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
 		2907A80D23037B1E00813517 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
-		2907A80F23037B9800813517 /* AnchorExt.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AnchorExt.swift; sourceTree = "<group>"; tabWidth = 2; };
+		2907A80F23037B9800813517 /* UIViewExtension.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; tabWidth = 4; };
 		2929860F23099840003234B7 /* User.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
-		2955510A230EB3DB004F08D9 /* CardVM.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = CardVM.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		2955510A230EB3DB004F08D9 /* CardVM.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = CardVM.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 1; };
 		2955510C230EB4D4004F08D9 /* HomeVM.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
-		296487B02304D39900BE8839 /* CardView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 1; };
+		296487B02304D39900BE8839 /* CardView.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; tabWidth = 3; usesTabs = 0; };
+		299D50DE232CF468002A73DC /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		299D50E1232CF6F4002A73DC /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		29AD6121230043CA003BA447 /* GoDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29AD6124230043CA003BA447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29AD612C230043CA003BA447 /* GoDate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoDate.xcdatamodel; sourceTree = "<group>"; };
@@ -97,6 +101,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		299D50E0232CF6C2002A73DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				299D50E1232CF6F4002A73DC /* TextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		29AD6118230043CA003BA447 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +144,7 @@
 			children = (
 				29AD6124230043CA003BA447 /* AppDelegate.swift */,
 				2907A80623037A9900813517 /* BaseViewController.swift */,
-				2907A80F23037B9800813517 /* AnchorExt.swift */,
+				2907A80F23037B9800813517 /* UIViewExtension.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -165,6 +177,8 @@
 		29AD613D230045F6003BA447 /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				299D50E0232CF6C2002A73DC /* Views */,
+				29FA7E42232CA26100DC72DC /* ViewController */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -174,6 +188,14 @@
 			children = (
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		29FA7E42232CA26100DC72DC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				299D50DE232CF468002A73DC /* RegisterVC.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,13 +270,15 @@
 			files = (
 				2907A80C23037B0600813517 /* HomeControlStackView.swift in Sources */,
 				2955510D230EB4D4004F08D9 /* HomeVM.swift in Sources */,
-				2907A81023037B9800813517 /* AnchorExt.swift in Sources */,
+				2907A81023037B9800813517 /* UIViewExtension.swift in Sources */,
 				29AD612D230043CA003BA447 /* GoDate.xcdatamodeld in Sources */,
 				2907A80923037AD300813517 /* HomeVC.swift in Sources */,
+				299D50E2232CF6F4002A73DC /* TextField.swift in Sources */,
 				2955510B230EB3DB004F08D9 /* CardVM.swift in Sources */,
 				2907A80E23037B1E00813517 /* TopNavigationStackView.swift in Sources */,
 				2929861023099840003234B7 /* User.swift in Sources */,
 				29AD6125230043CA003BA447 /* AppDelegate.swift in Sources */,
+				299D50DF232CF468002A73DC /* RegisterVC.swift in Sources */,
 				296487B12304D39900BE8839 /* CardView.swift in Sources */,
 				2907A80723037A9900813517 /* BaseViewController.swift in Sources */,
 			);
@@ -395,7 +419,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45572G9RT8;
 				INFOPLIST_FILE = GoDate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,7 +438,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45572G9RT8;
 				INFOPLIST_FILE = GoDate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
